@@ -1,3 +1,5 @@
+import logo from "./assets/logo.png";
+
 export default function App() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -11,9 +13,11 @@ export default function App() {
       <header className="sticky top-0 z-30 border-b border-white/10 bg-black/60 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/30 bg-gradient-to-br from-cyan-400/20 to-fuchsia-400/20 font-bold">
-              V
-            </div>
+            <img
+              src={logo}
+              alt="Veltrix logo"
+              className="h-10 w-auto"
+            />
             <div>
               <p className="text-sm font-bold tracking-[0.28em] uppercase">
                 Veltrix
@@ -181,7 +185,7 @@ export default function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/10 text-center py-6 text-white/40 text-sm">
+      <footer className="border-t border-white/10 py-6 text-center text-sm text-white/40">
         © 2026 Veltrix
       </footer>
     </div>
