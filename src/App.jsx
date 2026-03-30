@@ -1,331 +1,188 @@
-import React from "react";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
-import "./index.css";
-
-const improveItems = [
-  "Cart upsells",
-  "Product recommendations",
-  "Subscription conversion",
-  "Average order value",
-  "Customer retention",
-];
-
-const includedItems = [
-  "Cart upsell review",
-  "Product recommendation review",
-  "Subscription conversion review",
-  "Retention opportunity review",
-  "Short action plan with priority improvements",
-];
-
 export default function App() {
   return (
-    <div className="page">
-      <header className="site-header">
-        <div className="container header-inner">
-          <div>
-            <div className="brand-title">Veltrix</div>
-            <div className="brand-subtitle">
-              Helping supplement brands increase revenue through smarter systems
+    <div className="min-h-screen bg-black text-white">
+      {/* Background */}
+      <div className="pointer-events-none fixed inset-0 overflow-hidden">
+        <div className="absolute left-[-120px] top-[-120px] h-[320px] w-[320px] rounded-full bg-cyan-500/20 blur-3xl" />
+        <div className="absolute right-[-120px] top-[80px] h-[300px] w-[300px] rounded-full bg-fuchsia-500/20 blur-3xl" />
+      </div>
+
+      {/* HEADER */}
+      <header className="sticky top-0 z-30 border-b border-white/10 bg-black/60 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <div className="flex items-center gap-3">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/30 bg-gradient-to-br from-cyan-400/20 to-fuchsia-400/20 font-bold">
+              V
+            </div>
+            <div>
+              <p className="text-sm font-bold tracking-[0.28em] uppercase">
+                Veltrix
+              </p>
+              <p className="text-[11px] text-white/40">
+                Growth systems for supplement brands
+              </p>
             </div>
           </div>
 
-          <nav className="nav-links">
-            <a href="#improve">Services</a>
-            <a href="#offer">Offer</a>
-            <a href="#contact">Contact</a>
-          </nav>
-
-          <a className="btn btn-dark btn-small" href="#contact">
-            Request a Review
+          <a
+            href="#contact"
+            className="rounded-full border border-cyan-400/30 px-4 py-2 text-sm text-cyan-200 hover:bg-cyan-400/10"
+          >
+            Contact
           </a>
         </div>
       </header>
 
-      <main>
-        <section className="hero-section">
-          <div className="container hero-grid">
-            <div className="hero-left">
-              <p className="eyebrow">
-                Helping supplement brands increase revenue through smarter systems
-              </p>
+      {/* HERO */}
+      <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 md:grid-cols-2">
+        <div>
+          <p className="mb-4 text-xs uppercase tracking-[0.2em] text-cyan-300">
+            For supplement brands
+          </p>
 
-              <h1 className="hero-title">
-                AI Revenue Optimization for Supplement Brands
-              </h1>
+          <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">
+            We build systems that help supplement brands grow and convert better
+          </h1>
 
-              <p className="hero-text">
-                We help supplement brands increase average order value, improve
-                subscription conversions, and grow customer retention through
-                practical AI, reliable automation, and smarter revenue systems.
-              </p>
+          <p className="mt-6 text-lg text-white/70">
+            Veltrix helps supplement brands improve their funnels, automate
+            customer journeys, and build cleaner, more scalable systems across
+            their store.
+          </p>
 
-              <div className="hero-actions">
-                <a className="btn btn-dark" href="#contact">
-                  Request a Review
-                  <ArrowRight size={16} />
-                </a>
-              </div>
-            </div>
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#contact"
+              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black"
+            >
+              Start a project
+            </a>
 
-            <div className="card soft-card">
-              <p className="card-label">Why this works</p>
-              <h2 className="card-title">
-                Unlock more revenue from the traffic you already have.
-              </h2>
-              <p className="card-text">
-                Veltrix helps supplement brands identify overlooked revenue
-                opportunities across cart upsells, product recommendations,
-                subscriptions, and retention.
-              </p>
-
-              <div className="info-stack">
-                <div className="info-box">
-                  <p className="info-title">Focus</p>
-                  <p className="info-text">
-                    AOV, subscription conversion, and customer retention.
-                  </p>
-                </div>
-                <div className="info-box">
-                  <p className="info-title">Offer</p>
-                  <p className="info-text">
-                    Revenue Opportunity Review for Supplement Brands.
-                  </p>
-                </div>
-                <div className="info-box">
-                  <p className="info-title">Deliverable</p>
-                  <p className="info-text">
-                    A focused one-time review with clear observations, priority
-                    opportunities, and next-step recommendations.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div className="container trust-wrap">
-          <div className="trust-box">
-            <div className="trust-grid">
-              <div>
-                <p className="mini-label">Clear focus</p>
-                <p className="mini-text">
-                  Built around revenue opportunities that matter most for
-                  supplement brands.
-                </p>
-              </div>
-              <div>
-                <p className="mini-label">Practical review</p>
-                <p className="mini-text">
-                  A straightforward review with useful observations, not generic
-                  marketing talk.
-                </p>
-              </div>
-              <div>
-                <p className="mini-label">Direct contact</p>
-                <p className="mini-text">
-                  Simple contact with Veltrix to discuss fit, goals, and next
-                  steps.
-                </p>
-              </div>
-            </div>
+            <a
+              href="#services"
+              className="rounded-full border border-white/20 px-6 py-3 text-sm"
+            >
+              View services
+            </a>
           </div>
         </div>
 
-        <section id="improve" className="section">
-          <div className="container">
-            <div className="section-head">
-              <p className="eyebrow">What We Help Improve</p>
-              <h2 className="section-title">
-                Key revenue opportunities across the customer journey
-              </h2>
-            </div>
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+          <p className="text-sm text-white/50">What we focus on</p>
 
-            <div className="grid-three">
-              {improveItems.map((item) => (
-                <div key={item} className="card">
-                  <div className="item-row">
-                    <CheckCircle2 size={18} />
-                    <p>{item}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+          <ul className="mt-4 space-y-3 text-white/70">
+            <li>• Conversion-focused landing pages</li>
+            <li>• Email & SMS retention systems</li>
+            <li>• AI-powered customer flows</li>
+            <li>• Cleaner, scalable store structure</li>
+          </ul>
+        </div>
+      </section>
 
-        <section className="section section-soft">
-          <div className="container">
-            <div className="section-head narrow">
-              <p className="eyebrow">Short Description</p>
-              <h2 className="section-title">
-                Veltrix helps supplement brands make more money from the traffic
-                they already have.
-              </h2>
-              <p className="section-text">
-                We focus on key revenue opportunities across the customer
-                journey, including cart upsells, product recommendations,
-                subscription conversion, and customer retention.
-              </p>
-            </div>
-          </div>
-        </section>
+      {/* SERVICES */}
+      <section id="services" className="mx-auto max-w-7xl px-6 py-20">
+        <h2 className="text-3xl font-semibold">
+          What we build for supplement brands
+        </h2>
 
-        <section id="offer" className="section">
-          <div className="container">
-            <div className="section-head narrow">
-              <p className="eyebrow">Offer</p>
-              <h2 className="section-title">
-                Revenue Opportunity Review for Supplement Brands
-              </h2>
-              <p className="section-text">
-                A focused review designed to help supplement brands identify
-                overlooked revenue opportunities across their store and customer
-                journey.
-              </p>
-            </div>
-
-            <div className="offer-grid">
-              <div className="card">
-                <p className="card-label">What’s Included</p>
-                <div className="included-list">
-                  {includedItems.map((item) => (
-                    <div key={item} className="included-item">
-                      <CheckCircle2 size={18} />
-                      <p>{item}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="card dark-card">
-                <p className="card-label light">Outcome</p>
-                <h3 className="dark-title">
-                  Identify overlooked revenue opportunities.
-                </h3>
-                <p className="dark-text">
-                  Uncover practical ways to improve AOV, strengthen subscription
-                  performance, and increase customer retention.
-                </p>
-
-                <div className="dark-box">
-                  <p className="card-label light">Price</p>
-                  <p className="price">$300</p>
-                  <p className="light-text">One-time review</p>
-                </div>
-
-                <div className="dark-box">
-                  <p className="card-label light">Deliverable</p>
-                  <p className="light-text">
-                    A short revenue review with key observations, priority
-                    opportunities, and clear next-step recommendations.
-                  </p>
-                </div>
-
-                <a className="btn btn-light btn-full" href="#contact">
-                  Request a Review
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" className="section">
-          <div className="container contact-grid">
-            <div className="contact-cta">
-              <p className="card-label light">Call to Action</p>
-              <h2 className="cta-title">
-                Let’s identify revenue opportunities in your store.
-              </h2>
-              <p className="dark-text">
-                A focused review to uncover practical ways to improve average
-                order value, subscription performance, and retention.
-              </p>
-
-              <div className="hero-actions">
-                <a
-                  className="btn btn-light"
-                  href="mailto:veltrixgrowth.ai@gmail.com?subject=Revenue%20Opportunity%20Review"
-                >
-                  Request a Review
-                </a>
-                <a
-                  className="btn btn-outline-light"
-                  href="mailto:veltrixgrowth.ai@gmail.com?subject=Contact%20Veltrix"
-                >
-                  Contact Veltrix
-                </a>
-              </div>
-            </div>
-
-            <div className="card">
-              <p className="card-label">Contact</p>
-              <h3 className="card-title">Get in touch</h3>
-              <p className="card-text">
-                Reach out directly to discuss your store, your revenue goals, and
-                whether the review is a good fit.
-              </p>
-              <p className="small-muted">
-                Direct, simple contact. No complicated process — just a focused
-                conversation about where revenue opportunities may exist.
-              </p>
-
-              <div className="contact-list">
-                <div className="info-box">
-                  <p className="mini-label">Phone</p>
-                  <a href="tel:+14026152139" className="contact-link">
-                    +1 (402) 615-2139
-                  </a>
-                </div>
-
-                <div className="info-box">
-                  <p className="mini-label">Email</p>
-                  <a
-                    href="mailto:veltrixgrowth.ai@gmail.com"
-                    className="contact-link"
-                  >
-                    veltrixgrowth.ai@gmail.com
-                  </a>
-                </div>
-
-                <div className="info-box">
-                  <p className="mini-label">LinkedIn</p>
-                  <a
-                    href="https://www.linkedin.com/in/josecorreaai-1028c02/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="contact-link"
-                  >
-                    linkedin.com/in/josecorreaai-1028c02
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer className="site-footer">
-        <div className="container footer-top">
-          <div>
-            <p className="footer-brand">Veltrix</p>
-            <p className="footer-text">
-              AI revenue optimization for supplement brands through practical
-              systems, focused reviews, and clear next-step recommendations.
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border border-white/10 p-6">
+            <h3 className="text-xl font-semibold">Landing Pages</h3>
+            <p className="mt-3 text-white/60">
+              Pages designed to improve conversions and communicate your product
+              clearly.
             </p>
           </div>
 
-          <div className="footer-links">
-            <span>+1 (402) 615-2139</span>
-            <span>veltrixgrowth.ai@gmail.com</span>
-            <span>linkedin.com/in/josecorreaai-1028c02</span>
+          <div className="rounded-2xl border border-white/10 p-6">
+            <h3 className="text-xl font-semibold">Retention Systems</h3>
+            <p className="mt-3 text-white/60">
+              Email and SMS flows to recover, retain, and increase customer
+              value.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-white/10 p-6">
+            <h3 className="text-xl font-semibold">AI Automation</h3>
+            <p className="mt-3 text-white/60">
+              Smart systems to handle leads, support, and customer journeys.
+            </p>
           </div>
         </div>
+      </section>
 
-        <div className="container footer-bottom">
-          <p>© 2026 Veltrix. All rights reserved.</p>
-          <p>Revenue Opportunity Review for Supplement Brands</p>
+      {/* PROCESS */}
+      <section className="mx-auto max-w-7xl px-6 py-20">
+        <h2 className="text-3xl font-semibold">Our process</h2>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-4">
+          <div>
+            <p className="text-cyan-300">01</p>
+            <h3 className="font-semibold">Audit</h3>
+            <p className="text-white/60">
+              We review your current store and identify gaps.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-cyan-300">02</p>
+            <h3 className="font-semibold">Build</h3>
+            <p className="text-white/60">
+              We create pages, flows, and automation systems.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-cyan-300">03</p>
+            <h3 className="font-semibold">Launch</h3>
+            <p className="text-white/60">
+              We implement everything into your store.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-cyan-300">04</p>
+            <h3 className="font-semibold">Improve</h3>
+            <p className="text-white/60">
+              We refine based on performance and feedback.
+            </p>
+          </div>
         </div>
+      </section>
+
+      {/* CTA */}
+      <section id="contact" className="mx-auto max-w-7xl px-6 py-20">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-10">
+          <h2 className="text-3xl font-semibold">
+            Let’s build your growth system
+          </h2>
+
+          <p className="mt-4 text-white/70">
+            If you run a supplement brand and want a cleaner, more scalable
+            system, reach out and we’ll talk.
+          </p>
+
+          <div className="mt-6 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="mailto:veltrixgrowth.ai@gmail.com"
+              className="rounded-full bg-white px-6 py-3 text-black"
+            >
+              veltrixgrowth.ai@gmail.com
+            </a>
+
+            <a
+              href="tel:+14026152139"
+              className="rounded-full border border-white/20 px-6 py-3"
+            >
+              +1 (402) 615-2139
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-white/10 text-center py-6 text-white/40 text-sm">
+        © 2026 Veltrix
       </footer>
     </div>
   );
