@@ -33,7 +33,7 @@ export default function App() {
             href="#contact"
             className="rounded-full border border-cyan-400/30 px-4 py-2 text-sm text-cyan-200 hover:bg-cyan-400/10"
           >
-            Contact
+            Request a Revenue Review
           </a>
         </div>
       </header>
@@ -42,17 +42,15 @@ export default function App() {
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 md:grid-cols-2">
         <div>
           <p className="mb-4 text-xs uppercase tracking-[0.2em] text-cyan-300">
-            For supplement brands
+            For supplement and health brands
           </p>
 
           <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">
-            We build systems that help supplement brands grow and convert better
+            AI Systems for Scalable Brand Growth
           </h1>
 
           <p className="mt-6 text-lg text-white/70">
-            Veltrix helps supplement brands improve their funnels, automate
-            customer journeys, and build cleaner, more scalable systems across
-            their store.
+           We help supplement and health brands increase revenue, retention, and AOV through AI-powered systems and automation.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -87,7 +85,7 @@ export default function App() {
       {/* SERVICES */}
       <section id="services" className="mx-auto max-w-7xl px-6 py-20">
         <h2 className="text-3xl font-semibold">
-          What we build for supplement brands
+          What we build for supplement & health brands
         </h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -163,7 +161,7 @@ export default function App() {
           </h2>
 
           <p className="mt-4 text-white/70">
-            If you run a supplement brand and want a cleaner, more scalable
+            If you run a supplement or health brand and want a cleaner, more scalable
             system, reach out and we’ll talk.
           </p>
 
@@ -226,7 +224,7 @@ export default function App() {
     rel="noopener noreferrer"
     className="hover:text-white transition"
   >
-    veltrixgrowth.io
+    
   </a>
 </div>
    
