@@ -5,9 +5,10 @@ export default function App() {
     <div className="min-h-screen bg-black text-white">
       {/* Background */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="absolute left-[-120px] top-[-120px] h-[320px] w-[320px] rounded-full bg-cyan-500/20 blur-3xl" />
-        <div className="absolute right-[-120px] top-[80px] h-[300px] w-[300px] rounded-full bg-fuchsia-500/20 blur-3xl" />
+        <div className="absolute left-[-120px] top-[-120px] h-[320px] w-[320px] rounded-full bg-cyan-500/10 blur-3xl" />
+        <div className="absolute right-[-120px] top-[80px] h-[300px] w-[300px] rounded-full bg-fuchsia-500/10 blur-3xl" />
       </div>
+   
 
       {/* HEADER */}
       <header className="sticky top-0 z-30 border-b border-white/10 bg-black/60 backdrop-blur">
@@ -185,9 +186,52 @@ export default function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/10 py-6 text-center text-sm text-white/40">
-        © 2026 Veltrix
-      </footer>
+<footer className="border-t border-white/10 mt-20">
+  <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+    <div>
+      <h3 className="text-lg font-semibold text-white">Veltrix Growth</h3>
+      <p className="text-sm text-white/70 mt-2 max-w-md">
+        AI systems, automation, and revenue optimization for supplement brands.
+      </p>
+    </div>
+   <div className="flex flex-col gap-2 text-sm text-white/70">
+  <a
+    href="/privacy-policy.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition"
+  >
+    Privacy Policy
+  </a>
+
+  <a
+    href="/cookie-policy.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition"
+  >
+    Cookie Policy
+  </a>
+
+  <a
+    href="mailto:veltrixgrowth.ai@gmail.com"
+    className="hover:text-white transition"
+  >
+    veltrixgrowth.ai@gmail.com
+  </a>
+
+  <a
+    href="https://veltrixgrowth.io"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition"
+  >
+    veltrixgrowth.io
+  </a>
+</div>
+   
+  </div>
+</footer>
     </div>
   );
 }
