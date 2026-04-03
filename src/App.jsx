@@ -42,7 +42,7 @@ export default function App() {
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 md:grid-cols-2">
         <div>
           <p className="mb-4 text-xs uppercase tracking-[0.2em] text-cyan-300">
-            For supplement and health brands
+            For supplement brands
           </p>
 
           <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">
@@ -50,7 +50,7 @@ export default function App() {
           </h1>
 
           <p className="mt-6 text-lg text-white/70">
-           We help supplement and health brands increase revenue, retention, and AOV through AI-powered systems and automation.
+           We help supplement brands increase revenue, retention, and AOV through AI-powered systems and automation.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -58,7 +58,7 @@ export default function App() {
               href="#contact"
               className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black"
             >
-              Start a project
+              Get Your Free Review
             </a>
 
             <a
@@ -85,33 +85,31 @@ export default function App() {
       {/* SERVICES */}
       <section id="services" className="mx-auto max-w-7xl px-6 py-20">
         <h2 className="text-3xl font-semibold">
-          What we build for supplement & health brands
+          What we build for supplement brands
         </h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          <div className="rounded-2xl border border-white/10 p-6">
-            <h3 className="text-xl font-semibold">Landing Pages</h3>
-            <p className="mt-3 text-white/60">
-              Pages designed to improve conversions and communicate your product
-              clearly.
-            </p>
-          </div>
+  <div className="rounded-2xl border border-white/10 p-6">
+    <h3 className="text-xl font-semibold">Revenue Systems</h3>
+    <p className="mt-3 text-white/60">
+      We design and implement AI-driven systems that increase your store’s revenue through smarter upsells, cross-sells, and conversion optimization.
+    </p>
+  </div>
 
-          <div className="rounded-2xl border border-white/10 p-6">
-            <h3 className="text-xl font-semibold">Retention Systems</h3>
-            <p className="mt-3 text-white/60">
-              Email and SMS flows to recover, retain, and increase customer
-              value.
-            </p>
-          </div>
+  <div className="rounded-2xl border border-white/10 p-6">
+    <h3 className="text-xl font-semibold">Customer Journey Automation</h3>
+    <p className="mt-3 text-white/60">
+      We automate your customer journey to improve retention, increase repeat purchases, and maximize lifetime value.
+    </p>
+  </div>
 
-          <div className="rounded-2xl border border-white/10 p-6">
-            <h3 className="text-xl font-semibold">AI Automation</h3>
-            <p className="mt-3 text-white/60">
-              Smart systems to handle leads, support, and customer journeys.
-            </p>
-          </div>
-        </div>
+  <div className="rounded-2xl border border-white/10 p-6">
+    <h3 className="text-xl font-semibold">Funnel Optimization</h3>
+    <p className="mt-3 text-white/60">
+      We identify and fix bottlenecks in your funnel to improve conversion rates and unlock hidden revenue opportunities.
+    </p>
+  </div>
+</div>
       </section>
 
       {/* PROCESS */}
@@ -157,12 +155,11 @@ export default function App() {
       <section id="contact" className="mx-auto max-w-7xl px-6 py-20">
         <div className="rounded-3xl border border-white/10 bg-white/5 p-10">
           <h2 className="text-3xl font-semibold">
-            Let’s build your growth system
+            Get a Free Revenue Opportunity Review
           </h2>
 
           <p className="mt-4 text-white/70">
-            If you run a supplement or health brand and want a cleaner, more scalable
-            system, reach out and we’ll talk.
+            If you run a supplement brand, we’ll analyze your store and show you where you're leaving money on the table.
           </p>
 
           <div className="mt-6 flex flex-col gap-4 sm:flex-row">
